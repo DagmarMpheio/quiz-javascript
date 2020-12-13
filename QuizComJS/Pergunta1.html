@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Com JavaScript</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+<marquee><h3 class="text-primary">Criado por Dagmar de Matos Mpheio</h3></marquee>
+<div class="col col-lg-auto main" id="corpo">
+    <br>
+    <h3 class="text-center text-dark" id="questao"></h3><br>
+    <form action="" name="formPergunta" method="">
+        <div class="">
+            <label for="op1" id="op1">Dagmar de Matos Mpheio</label>
+            <input type="radio" name="resposta" id="opRadio1" value="Dagmar de Matos Mpheio"><br>
+            <label for="op2" id="op2">João Lourenço</label>
+            <input type="radio" name="resposta" id="opRadio2" value="João Lourenço"><br>
+            <label for="op3" id="op3">António Agostinho Neto</label>
+            <input type="radio" name="resposta" id="opRadio3" value="António Agostinho Neto"><br>
+            <label for="op4" id="op4">António José</label>
+            <input type="radio" name="resposta" id="opRadio4" value="António José"><br>
+            <button type="button" class="btn btn-outline-primary btn-lg" onclick="verificarResposta()">Responder <i
+                    class="fa fa-reply-all">&nbsp;</i></button>
+        </div>
+    </form>
+</div>
+<div class="alert alert-danger text-center perdeu" role="alert" id="pontos">
+    <h3 id="pontuacao"></h3>
+    <br><br><a href="Pergunta1.html" class="btn-outline-danger btn-lg btn">Jogar Novamente! <i class="fa fa-gamepad">&nbsp;</i></a>
+    <br><br><a href="Index.html" class="btn-outline-primary btn-lg btn">Inicio!</a>
+</div>
+<div class="alert alert-primary text-center perdeu" role="alert" id="pontosV">
+    <h3 id="pontuacaoV"></h3>
+    <br><br><a href="Index.html" class="btn-outline-primary btn-lg btn">Inicio!<i class="fa fa-home">&nbsp;</i></a>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
